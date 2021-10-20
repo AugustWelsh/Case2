@@ -1,0 +1,107 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Abhaya Libre', serif;
+    font-size: 18px;
+  letter-spacing: 1px;
+  }
+  .flexbox{
+    display: flex;
+    background-color: rgb(228, 228, 228);
+    margin-top: 5px;
+    border-radius: 8px;
+  }
+.main-nav {
+   
+    display: flex;
+    text-decoration: none;
+      list-style-type: none;
+      align-items: center;
+      font-family: 'Abhaya Libre', serif;
+      
+  }
+  .main-nav li:first-child {
+    margin-right: auto;
+    text-decoration: none;
+      list-style-type: none;
+  }
+  .main-nav a {
+    
+    background: #ffffff;
+    color: rgb(0, 0, 0);
+      display: flex;
+      padding: 5px;
+      text-decoration: none;
+      list-style-type: none;
+      
+      
+  }
+  .main-nav-child a:hover{
+      background-image: linear-gradient(rgb(255, 179, 179), rgb(169, 169, 245));
+      border: solid black 1px;
+      border-radius: 8px;
+      
+  }
+  .main-nav-child{
+    border-bottom: solid black 1px;
+  }
+ .field{
+     margin-left: 200px;
+     margin-right: 200px;
+     margin-top: 25px;
+ }
+ .button{
+    color: white;
+    background-color: red;
+    padding:5px;
+    margin-left: 5px;
+    margin-bottom: 5px;
+ }
+ #footer{
+  background-color:rgb(138, 188,218);
+  margin-top: px;
+  text-align:center;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px; 
+  width: 100%;
+  display: flex;
+  flex: 1;
+  font-weight: bold;
+
+ }
+ .footer-child{
+  text-align: center;
+  margin-left: 5px;
+  margin-right: 5px;
+  
+}
+ }
+ .footer-logo{
+   align-content: center;
+   margin-top: 5px;
+   margin-left: 3px;
+   margin-right: 3px;
+ }
+ .footer-logo:hover{
+    transform: scale(1.1);
+    
+}
+@media all and (min-width: 600px) {
+    .aside { flex: 1 0 0; }
+  }
+  
+  @media all and (min-width: 800px) {
+    .main    { flex: 3 0px; }
+    .aside-1 { order: 1; } 
+    .main    { order: 2; }
+    .aside-2 { order: 3; }
+    .footer  { order: 4; }
+  }
+  
+  body {
+    padding: 2em; 
+    width: 100%;
+   
+  }
